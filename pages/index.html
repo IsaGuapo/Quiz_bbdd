@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto quiz </title>
+
+    <link rel="stylesheet" href="../styles/styles.css">
+<!--link normalize-->
+    <link rel="stylesheet" href="../styles/normalize.css">
+<!--link scripts-->
+    <!-- <script  src="../scripts/scripts.js" ></script> -->
+    <script defer type="module" src="../scripts/scripts.js" ></script>
+    <!-- <script defer src="../scripts/resultados_graficas.js"></script> -->
+
+<!--links para estilo de letras-->
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Permanent+Marker&family=Qahiri&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Irish+Grover&family=Permanent+Marker&family=Poppins:wght@300&family=Qahiri&family=Zen+Kurenaido&family=Zen+Maru+Gothic:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+    <body class="body_index" id="body_index2">
+        <!-- Inicio -->
+            <nav>
+                <h1>Quiz Halloween</h1>
+                <h3>Welcome to the quiz</h3>
+            </nav>
+        <!--Pagina de inicio-->
+            <div id="btnuser">
+                <div id="div_enter">
+                    <!-- <label>Nombre</label>
+                    <input type="text" id="usuario">
+                    <button id='start'>Start</button> -->
+                <form action="onsubmit" >
+                    <h4>Login</h4>
+                        <div class="login">
+                            <input type="email2" class="input_email" id="emailloginIn" name="email2" placeholder="email" required >
+                        </div>
+                        <div class="login">
+                            <input type="password"  id="pswloguinIn" placeholder="password">
+                        </div>
+                        <div class="login">
+                            <input type="button"  id="start" value="Start" class="boton">
+                        </div>
+                    <h4>Nuevo Usuario</h4>
+                        <div class="login">
+                            <input type="email" class="input_email" id="emailloguin" name="email1" placeholder="email" required >
+                        </div>
+                        <div class="login">
+                            <input type="password" id="pswloguin" placeholder="password">
+                        </div>
+                        <div class="login">
+                            <input type="button" id="btloguin" value="Crear" class="boton">
+                        </div>
+                </form>
+            </div>
+        <!-- Parte de preguntas -->
+                <div id="div_questions">
+                        <ul class="preguntas" id='preguntas'>
+                            <h2 id="question">¿?</h2>
+                            <li class="respuesta" id='q1'>
+                                <input type="radio" id="p1" name="p1" value="1">
+                                    <label for="p1"> </label><br>
+                            </li>
+                            <li class="respuesta" id='q2'>
+                                <input type="radio" id="p2" name="p1" value="2">
+                                <label for="p2"> </label><br>
+                            </li>
+                            <li class="respuesta" id='q3'>
+                            <input type="radio" id="p3" name="p1" value="3">
+                            <label for="p3"></label><br>
+                            </li>
+                            <li class="respuesta" id='q4'>
+                                <input type="radio" id="p4" name="p1" value="4">
+                                <label for="p3"> </label><br>
+                            </li>
+                            </ul>
+                            <a href="../pages/grafica.html"><input type="button" id="resultados" value="Ver resultados" class="boton" ></a>
+                
+                            <!--<button id="bottom_index" type="button">Siguiente </button>-->
+                    </form>
+                </div>
+        
+           </div>
+    </body>
+</html>
